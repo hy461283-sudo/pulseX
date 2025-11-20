@@ -21,11 +21,18 @@ class SentimentAnalysis:
         Returns a logical pandas Series.
         """
         contains_column = data['text'].str.contains(word, case = False)
-        contains_column |= data['extended_tweet-full_text'].str.contains(word, case = False)
-        contains_column |= data["quoted_status-text"].str.contains(word, case = False)
-        contains_column |= data["quoted_status-extended_tweet-full_text"].str.contains(word, case = False)
-        contains_column |= data["retweeted_status-text"].str.contains(word, case = False)
-        contains_column |= data["retweeted_status-extended_tweet-full_text"].str.contains(word, case = False)
+        
+        # Check optional columns if they exist
+        if 'extended_tweet-full_text' in data.columns:
+            contains_column |= data['extended_tweet-full_text'].str.contains(word, case = False)
+        if "quoted_status-text" in data.columns:
+            contains_column |= data["quoted_status-text"].str.contains(word, case = False)
+        if "quoted_status-extended_tweet-full_text" in data.columns:
+            contains_column |= data["quoted_status-extended_tweet-full_text"].str.contains(word, case = False)
+        if "retweeted_status-text" in data.columns:
+            contains_column |= data["retweeted_status-text"].str.contains(word, case = False)
+        if "retweeted_status-extended_tweet-full_text" in data.columns:
+            contains_column |= data["retweeted_status-extended_tweet-full_text"].str.contains(word, case = False)
        
         return contains_column
 
