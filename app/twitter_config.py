@@ -1,8 +1,2 @@
 # Twitter API v2 Bearer Tokens
 # Using the first bearer token - you can switch to others if rate limited
-bearer_token = "AAAAAAAAAAAAAAAAAAAAABmY5QEAAAAAsr24Rt8v26u4YhJyvSt7daFVSp8%3D9JbsQab2fbXA7zQvpWTysYRMMmnb5hjwxD6JtrPWc9tlJkd4Af"
-
-# Alternative bearer tokens (use if primary is rate limited)
-bearer_token_2 = "AAAAAAAAAAAAAAAAAAAAAI2W5QEAAAAApf1kADBOfB695pERLgQeUlKt7WY%3DYGwi52nlvIqN5cTHXWp7ywSs0YZx9dEpPZt9TgQwyw5F3NcoSf"
-bearer_token_3 = "AAAAAAAAAAAAAAAAAAAAAOuW5QEAAAAADid1J1PpAKAg0r3KXlCQzLK9eC0%3DcrFkTp1hvuomuvOmL5nAGloXnmASBMLblUo4DIEokOi2J00zbo"
-bearer_token_4 = "AAAAAAAAAAAAAAAAAAAAAJ%2BI5QEAAAAAoBVkIETVuishnVKJ11UaysIDsgk%3DRUgfCdvlKgxES0oA8YMFIZb2ImtFdM6rpy2j3ULeLxHr2x8qzO"
