@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Twitter API Credentials (IMPORTANT!)
+# Uncomment the line below if you want to keep credentials private
+# app/twitter_config.py
+
+# Data files
+*.json
+!sample_tweets.json
+
+# Logs
+*.log
+
+# NLTK data
+nltk_data/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.local
